@@ -62,5 +62,15 @@ namespace UpDownNumbers
 
             return sum + (ulong)arr.Sum(x => (long)x);
         }
+
+        private static long Pow(int x, int y)
+        {
+            long rez = 1;
+            for (int i = 1; i <= y; i++)
+            {
+                rez *= x;
+            }
+            return rez;
+        }
     }
 }
